@@ -1,11 +1,11 @@
 # bearclaw
 Bearclaw Backup Scripts
 
-Bearclaw is a bash shell script which reads target configurations from a Redis key/value database and supports several different backup functions. Functions can be added modularly.  Focus has been on keeping the backups fully configured and supported from the server side (i.e. not requiring any modifications to the client system besides what is already available), ease of configuration, informational and clear logging, secure storage of auth, and encrypted connections.
+Bearclaw is a bash shell script which reads target configurations from a Redis key/value database and supports several different backup functions. Functions can be added modularly.  Focus has been on simplicity of use, ease of configuration, informational and clear logging, secure storage of auth, and encrypted connections.
 
 Currently supported backup functions:
   * Rsync'ed backups over ssh.
-  * Rsync'ed backups from mounted CIFS/SMB shares.
+  * Rsync'ed backups from mounted CIFS/SMB shares (mounts share first and the rsyncs the backup).
   * IMAP mail synchronisation with getmail.
   
 Benefits:
