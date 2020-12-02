@@ -15,7 +15,7 @@ Benefits:
   * Hard-linked copies mean that no additional space is required for each copy.
   * Hard-linked copies mean that each timestamped directory is essentially a full backup with all files granularly available for restoral.
   * Each user has full access through an authenticated miniserve instance to find and restore their own files.
-  * Storage recovery process deletes oldest backups when space available (redis configurable) is low.
+  * Storage recovery process deletes oldest backups when space available is low.
   * Admin access to redis-commander instance for adding and modifying users and target systems.
   * Email notifications are sent after each back up run.
   * Log files are emailed to users after each run.
